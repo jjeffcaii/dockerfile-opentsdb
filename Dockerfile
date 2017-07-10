@@ -20,6 +20,9 @@ rm -rf *
 
 COPY opentsdb.conf /etc/opentsdb/opentsdb.conf
 
+# Configuration directory.
+VOLUME [ "/etc/opentsdb" ]
+
 EXPOSE 4242
 
 ENTRYPOINT [ "bin/tsdb" ]
