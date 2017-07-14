@@ -19,11 +19,10 @@ dpkg -i *.deb && \
 rm -rf *
 
 COPY opentsdb.conf /etc/opentsdb/opentsdb.conf
+COPY entrypoint.sh /usr/local/bin/entrypoint
 
 # Configuration directory.
 VOLUME [ "/etc/opentsdb" ]
 
-EXPOSE 4242
-
-ENTRYPOINT [ "bin/tsdb" ]
+ENTRYPOINT [ "entrypoint" ]
 CMD [ "tsd" ]
