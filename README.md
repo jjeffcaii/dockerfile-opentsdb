@@ -1,8 +1,6 @@
-# Dockerfile OpenTSDB
-------------------------------------
+# Dockerfile For OpenTSDB
 
 ### Table Create
-----------------------------------
 
 ``` shell
 create 'tsdb',
