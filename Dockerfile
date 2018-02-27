@@ -1,5 +1,5 @@
-FROM dockerhub.las:8010/zero/java:8
-LABEL maintainer wcai@maxleap.com
+FROM jjeffcaii/java:8u102
+LABEL maintainer jjeffcaii@outlook.com
 
 WORKDIR /usr/share/opentsdb
 
